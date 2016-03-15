@@ -1,0 +1,27 @@
+<template name="insertTagForm">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- {{> quickForm id="insertTagForm" type="insert" collection="Tags" }} -->
+        {{#autoForm collection="Tags" id="insertTagForm" type="insert"}}
+
+          <fieldset>
+            <legend>CLM Presentation Detail</legend>
+
+            {{> afQuickField name='presentationName'}}
+
+
+            {{> afQuickField name='product'}}
+
+            {{> afQuickField name='parentId'}}
+            {{> afQuickField name='presentationId'}}
+
+
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Insert</button>
+
+        {{/autoForm}}
+      </div>
+    </div>
+  </div>
+</template>

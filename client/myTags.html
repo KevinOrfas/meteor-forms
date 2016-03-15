@@ -1,0 +1,20 @@
+<template name="myTags">
+  <div class="container">
+    <div class="row">
+      {{#each tags}}
+        <div class="col-md-3">
+          {{presentationName}}
+        </div>
+        <div class="col-md-3">
+          {{product}}
+        </div>
+        <div class="col-md-3">
+          {{parentId}}
+        </div>
+        <div class="col-md-3">
+          {{presentationId}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</template>
