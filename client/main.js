@@ -14,18 +14,17 @@ Template.myTags.helpers({
   }
 });
 
-Template.navbar.helpers({
-  counter: function () {
-    return Session.get('counter');
-  }
-});
+
+// Meteor.call('addTag',text);
 
 ///////////
 /// Events
 ///////////
 
-Template.navbar.events({
-  'click button': function () {
-    // increment the counter when button is clicked
+Template.insertTagForm.events({
+  'insert': function(){
+    Meteor.call('addTag');
   }
+
+
 });
