@@ -6,13 +6,13 @@ Meteor.methods({
     }
     console.log('Fuck all');
     Tags.insert({
-      presentationName: presentationName,
-      product: product,
-      parentId: parentId,
-      presentationId: presentationId
-      // createdAt: new Date(),
-      // owner: Meteor.userId(),
-      // username: Meteor.user().username
+      // presentationName: presentationName,
+      // product: product,
+      // parentId: parentId,
+      // presentationId: presentationId,
+      createdAt: new Date(),
+      owner: Meteor.userId(),
+      username: Meteor.user().username
     });
   }
 

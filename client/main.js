@@ -14,17 +14,16 @@ Template.myTags.helpers({
   }
 });
 
-
-// Meteor.call('addTag',text);
-
 ///////////
 /// Events
 ///////////
 
 Template.insertTagForm.events({
-  'insert': function(){
+  insert: function() {
+    console.log('insert is going on');
     Meteor.call('addTag');
+  },
+  update: function() {
+
   }
-
-
 });
