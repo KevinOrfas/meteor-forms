@@ -1,1 +1,23 @@
 /* CSS declarations go here */
+.space-top {
+  margin-top: 1em;
+}
+
+.wide-text-edit,
+.text-area-edit {
+  padding: 6px 12px;
+}
+
+
+.presentation-details {
+  list-style: none;
+}
+
+.item {
+  /*display: block;*/
+  padding: 5px;
+  margin: 5px;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  cursor: move;
+}

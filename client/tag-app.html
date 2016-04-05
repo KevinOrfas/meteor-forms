@@ -4,8 +4,17 @@
 
 <body>
   {{> navbar}}
-
-  {{> myForms}}
-  <!-- {{> myTags}} -->
-
+  <div class="container">
+    <div class="row">
+      {{> myForms}}
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {{> myTags}}
+      </div>
+      <div class="col-md-6">
+        {{> myKeys}}
+      </div>
+    </div>
+  </div>
 </body>

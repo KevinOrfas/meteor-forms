@@ -1,0 +1,18 @@
+<template name="insertKeyMessages">
+    {{#autoForm collection="Keys" id="insertKeyMessages" type="insert" meteormethod="addKey"}}
+
+    <!-- {{> quickForm id="insertTagForm" type="insert" collection="Tags" }} -->
+
+    <fieldset>
+      <legend>Key Messages</legend>
+      {{> afQuickField name='keyMessage'}}
+      {{> afQuickField name='description'}}
+
+      {{> afQuickField name='order'}}
+      {{> afQuickField name='slideName'}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Insert</button>
+
+
+  {{/autoForm}}
+</template>

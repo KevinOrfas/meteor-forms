@@ -6,3 +6,9 @@ Meteor.publish("tags", function() {
     return Tags.find();
   }
 });
+
+Meteor.publish("keys", function() {
+  if (this.userId) {
+    return Keys.find();
+  }
+});

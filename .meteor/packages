@@ -22,3 +22,5 @@ twbs:bootstrap
 aldeed:autoform
 aldeed:collection2
 aldeed:simple-schema
+babrahams:editable-text
+mrt:jquery-ui

@@ -1,35 +1,35 @@
-<template name="myTags">
+<template name="myKeys">
       <div class="col-md-12 space-top">
         <fieldset>
-          <legend>CLM Presentations Details</legend>
+          <legend>Key Messages</legend>
         </fieldset>
       </div>
-      {{#each tags}}
+      {{#each keys}}
       <div class="item col-md-12">
           <fieldset>
             <legend>
-              Presentation: {{> editableText collection="tags" field="presentationName" inputClass="form-control"}}
+              Key Message: {{> editableText collection="keys" field="keyMessage" inputClass="form-control"}}
             </legend>
           </fieldset>
           <ul class="col-md-12 presentation-details">
             <li class="col-md-6">
               <div class="form-group">
-                <label for="">CLM Presentation Name: </label>  {{> editableText collection="tags" field="presentationName" inputClass="form-control"}}
+                <label for="">Key Message: </label>  {{> editableText collection="keys" field="keyMessage" inputClass="form-control"}}
               </div>
             </li>
             <li class="col-md-6">
                 <div class="form-group">
-                  <label for="">Product: </label> {{> editableText collection="tags" field="product" inputClass="form-control"}}
+                  <label for="">Description: </label> {{> editableText collection="keys" field="description" inputClass="form-control"}}
                 </div>
             </li>
             <li class="col-md-6">
                 <div class="form-group">
-                  <label for="">ParentId: </label> {{> editableText collection="tags" field="parentId" inputClass="form-control"}}
+                  <label for="">Order: </label> {{> editableText collection="keys" field="order" inputClass="form-control"}}
                 </div>
             </li>
             <li class="col-md-6">
                 <div class="form-group">
-                  <label for="">PresentationId: </label> {{> editableText collection="tags" field="presentationId" inputClass="form-control"}}
+                  <label for="">Slide Name: </label> {{> editableText collection="keys" field="slideName" inputClass="form-control"}}
                 </div>
             </li>
           </ul>
